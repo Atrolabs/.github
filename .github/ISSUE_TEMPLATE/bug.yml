@@ -1,0 +1,28 @@
+name: Bug
+description: something's broken
+type: Bug
+
+body:
+  - type: textarea
+    id: whats-wrong
+    attributes:
+      label: what's wrong
+      description: what's happening vs what should happen
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: steps to reproduce
+      value: |
+        1.
+    validations:
+      required: false
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: notes
+    validations:
+      required: false
